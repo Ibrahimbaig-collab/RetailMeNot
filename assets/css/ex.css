@@ -88,7 +88,7 @@ body {
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: 100%;
-    background-image: url('../assets/background.svg'); 
+    background-image: url('../assets/images/background.svg'); 
 }
 /* Adjustments for Tablet (md) Screens */
 @media (max-width: 768px) {
@@ -122,49 +122,37 @@ body {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    display: none;  /* Hidden initially */
-    transition: all 0.3s ease;  /* Smooth hover effect */
+    display: none;   
+    transition: all 0.3s ease;   
 }
-
 #splide02:hover .splide__arrow {
-    display: block;  /* Show arrows on hover over container */
+    display: block;  
 }
-
 #splide02 .splide__arrow--prev {
-    left: 16%;  /* Positioned to match your layout */
+    left: 16%;  
 }
-
 #splide02 .splide__arrow--next {
     right: 16%;
 }
-
 /* Default State */
 #splide02 .splide__arrow {
-    background-color: rgba(0, 0, 0, 0.6);  /* Dark background initially */
+    background-color: rgba(0, 0, 0, 0.6); 
     width: 40px;
     height: 40px;
 }
 #splide02 .splide__arrow svg {
-    fill: white;  /* SVG stays white */
+    fill: white;  
 }
-/* On Hover */
 #splide02 .splide__arrow:hover {
-    background-color: rgba(0, 0, 0, 1);  /* Darker black background on hover */
+    background-color: rgba(0, 0, 0, 1);  
 }
 
 .bg-customize {
-    background-image: url('../assets/head-img.webp');
+    background-image: url('../assets/images/head-img.webp');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 40px;
-
-    
-}
-.set-media {
-    font-weight: bold;
-    text-decoration: underline;
-    
 }
 
 /* start pagination */

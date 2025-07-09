@@ -1,0 +1,596 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-set-0 text-white">
+
+
+
+    <header>
+
+        <!-- for md navbar -->
+        <section>
+            <div class="block lg:hidden">
+                <nav class="bg-set-0 border-gray-200">
+                    <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+                        <!-- Logo -->
+                        <a href="#" class="flex items-center space-x-3">
+                            <img src="assets/images/logo.webp" class="h-15" alt="Logo" />
+                        </a>
+
+                        <!-- Toggle Button -->
+                        <button data-collapse-toggle="navbar-dropdown" type="button"
+                            data-drawer-target="drawer-example-1" data-drawer-show="drawer-example-1"
+                            aria-controls="drawer-example-1"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none"
+                            aria-controls="navbar-dropdown" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 17 14"
+                                aria-hidden="true">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+
+
+                        <!-- drawer init and toggle -->
+
+
+                        <!-- drawer component -->
+                        <div id="drawer-example-1"
+                            class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-black dark:bg-gray-800"
+                            tabindex="-1" aria-labelledby="drawer-label" style="width:250px;">
+                            <h5 id="drawer-label"
+                                class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400">
+                                <img src="assets/images/logo.webp" class="" alt="">
+                            </h5>
+                            <button type="button" data-drawer-hide="drawer-example-1" aria-controls="drawer-example"
+                                class="text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+                                <svg fill="grey" class="h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path
+                                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                                </svg>
+                                <span class="sr-only">Close menu</span>
+                            </button>
+                            <div class="">
+                                <ul>
+                                    <li>
+
+                                        <div id="accordion-collapse" data-accordion="collapse"
+                                            class="bg-black text-white">
+
+                                            <!-- Home (active) -->
+                                            <h2 id="accordion-collapse-heading-1">
+                                                <button type="button"
+                                                    class="bg-transparent flex items-center justify-between w-full p-4 font-semibold border-b border-gray-700 text-white bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white"
+                                                    data-accordion-target="#accordion-collapse-body-1"
+                                                    aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                                    <span>Home</span>
+                                                    <svg data-accordion-icon class="w-4 h-4 transform rotate-180"
+                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 10 6">
+                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                                                    </svg>
+                                                </button>
+                                            </h2>
+                                            <div id="accordion-collapse-body-1" class="hidden"
+                                                aria-labelledby="accordion-collapse-heading-1">
+                                                <div class="p-4 text-gray-400">
+                                                    <p>Home One</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- About -->
+                                            <h2>
+                                                <button type="button"
+                                                    class="bg-transparent flex items-center justify-between w-full p-4 font-semibold border-b border-gray-700 bg-gray-100 dark:bg-gray-800 text-white dark:text-white"
+                                                    data-accordion-target="#accordion-collapse-body-2"
+                                                    aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                                                    <span>About</span>
+                                                    <svg data-accordion-icon class="w-4 h-4 transform"
+                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 10 6">
+                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4" />
+                                                    </svg>
+                                                </button>
+                                            </h2>
+                                            <div id="accordion-collapse-body-2" class="hidden"
+                                                aria-labelledby="accordion-collapse-heading-2">
+                                                <div class="p-4 text-gray-400">
+                                                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+                                                </div>
+                                            </div>
+
+
+                                            <h2>
+                                                <button type="button"
+                                                    class="bg-transparent flex items-center justify-between w-full p-4 font-semibold border-b border-gray-700 text-white hover:text-red-600"
+                                                    data-accordion-target="#accordion-collapse-body-3"
+                                                    aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                                                    <span>Service</span>
+                                                    <svg data-accordion-icon class="w-4 h-4 transform"
+                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 10 6">
+                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4" />
+                                                    </svg>
+                                                </button>
+                                            </h2>
+                                            <div id="accordion-collapse-body-3" class="hidden"
+                                                aria-labelledby="accordion-collapse-heading-3">
+                                                <div class="p-4 text-gray-400">
+                                                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                            </div>
+
+                            <div class="">
+                                <h3 class="text-1xl font-bold bg-amber-500 mt-4">CONTACT INFO</h3>
+                                <p class="custom-borders mt-4 mb-4"></p>
+
+                                <div class="flex items-center py-2">
+                                    <i class="fa-solid fa-phone" style="color: rgb(184, 10, 10);"></i>
+                                    <p class="ml-3" style="">031245645</p>
+                                </div>
+                                <div class="flex items-center py-2">
+                                    <i class="fa-solid fa-envelope" style="color: rgb(184, 10, 10);"></i>
+                                    <p class="ml-3">hotmail@gmail.com</p>
+                                </div>
+                                <div class="flex items-center py-2">
+                                    <i class="fa-solid fa-location-dot" style="color: rgb(184, 10, 10);"></i>
+                                    <p class="ml-3">USA Ohio</p>
+                                </div>
+                            </div>
+                            <div class="socail flex items-center gap-2 py-4">
+                                <div class="p-2 rounded-full aspect-square flex justify-center items-center"
+                                    style="background-color: #353535; width: 35px; height: 35px;">
+                                    <a href="#"
+                                        class="d-inline-flex text-decoration-none align-items-center justify-content-center  text-white rounded-circle"
+                                        style="width: 25px; height: 20px;">
+                                        <i class="fa-brands fa-facebook-f ml-1"></i>
+                                    </a>
+                                </div>
+                                <div class="p-2 rounded-full aspect-square flex justify-center items-center"
+                                    style="background-color: #353535; width: 35px; height: 35px;">
+                                    <a href="#"
+                                        class="d-inline-flex text-decoration-none align-items-center justify-content-center  text-white rounded-circle"
+                                        style="width: 25px; height: 20px;">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="p-2 rounded-full aspect-square flex justify-center items-center"
+                                    style="background-color: #353535; width: 35px; height: 35px;">
+                                    <a href="#"
+                                        class="d-inline-flex text-decoration-none align-items-center justify-content-center  text-white rounded-circle"
+                                        style="width: 25px; height: 20px;">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                                <div class="p-2 rounded-full aspect-square flex justify-center items-center"
+                                    style="background-color: #353535;  width: 35px; height: 35px;">
+                                    <a href="#" class="text-white">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- end for md navbar -->
+        <!-- Left: Logo -->
+        <div class="flex container mx-auto">
+
+            <div class="bg-set-1 flex items-center content-center mt-5 hidden lg:block" style="width:221px;">
+                <a href="#" class="text-xl font-bold flex justify-center p-4">
+                    <img src="assets/images/logo.webp" class="flex justify-center" alt="">
+                </a>
+            </div>
+            <nav class="bg-set text-white w-full mt-5 hidden lg:block">
+                <div class="container mx-auto">
+                    <div class="flex items-center justify-between ms-5">
+                        <div class="flex gap-5 px-4">
+                            <div class="flex items-center py-2">
+                                <i class="fa-solid fa-phone" style="color: rgb(184, 10, 10);"></i>
+                                <p class="ml-3">031245645</p>
+                            </div>
+                            <div class="flex items-center py-2">
+                                <i class="fa-solid fa-envelope" style="color: rgb(184, 10, 10);"></i>
+                                <p class="ml-3">hotmail@gmail.com</p>
+                            </div>
+                            <div class="flex items-center py-2">
+                                <!-- <i class="fa-solid fa-location-dot" style="color: rgb(184, 10, 10);"></i> -->
+                                <svg stroke="currentColor" fill="red" stroke-width="0" viewBox="0 0 512 512"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z">
+                                    </path>
+                                </svg>
+                                <p class="ml-3">USA Ohio</p>
+                            </div>
+                        </div>
+                        <div class="parent-div">
+
+                            <!-- Right: Icon & Menu Toggle -->
+                            <div class="flex items-center space-x-4 ">
+                                <button class="p-3 px-5 font-bold" style="background-color: rgb(184, 10, 10);">GET A
+                                    CODE<i class="fa-solid fa-arrow-right ms-3"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="border-b px-0"></p>
+                <div class="container mx-auto row flex items-center justify-between py-3 px-4 ms-5">
+
+                    <div class="parent-div">
+
+                        <!-- Center: Menu (hidden on small screens) -->
+                        <div class="hidden md:flex space-x-4 gap-4" id="menu">
+                            <a href="#" class="hover:text-gray-300">Home</a>
+                            <a href="#" class="hover:text-gray-300">About</a>
+                            <a href="#" class="hover:text-gray-300">Service</a>
+                            <a href="#" class="hover:text-gray-300">Project</a>
+                            <a href="#" class="hover:text-gray-300">Blog</a>
+                            <a href="#" class="hover:text-gray-300">Pages</a>
+                            <a href="#" class="hover:text-gray-300">Contact</a>
+                        </div>
+
+
+                    </div>
+                    <div class="parent-div">
+
+                        <!-- Right: Icon & Menu Toggle -->
+                        <div class="flex items-center space-x-4 me-5">
+                            <!-- Search Icon -->
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            <!-- Mobile menu button -->
+                            <button class="block md:hidden" id="menuToggle">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </button>
+
+                            <svg data-drawer-target="drawer-example" data-drawer-show="drawer-example"
+                                aria-controls="drawer-example" width="31" height="24" viewBox="0 0 31 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.0234375" y1="12" x2="30.0234" y2="12" stroke="currentColor"
+                                    stroke-width="3"></line>
+                                <path d="M5.02344 22H30.0234" stroke="currentColor" stroke-width="3"></path>
+                                <path d="M10.0234 2H30.0234" stroke="currentColor" stroke-width="3"></path>
+                            </svg>
+                        </div>
+
+                        <!-- drawer component -->
+                        <div id="drawer-example"
+                            class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-black dark:bg-gray-800"
+                            tabindex="-1" aria-labelledby="drawer-label" style="width: 384px;">
+                            <h5 id="drawer-label"
+                                class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400">
+                                <img src="assets/images/logo.webp" class="" alt="">
+                            </h5>
+                            <button type="button" data-drawer-hide="drawer-example" aria-controls="drawer-example"
+                                class="text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+                                <svg fill="grey" class="h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path
+                                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                                </svg>
+                                <span class="sr-only">Close menu</span>
+                            </button>
+                            <div class="">
+                                <h3 class="text-1xl font-bold bg-amber-500 ">ABOUT US</h3>
+                                <p class="custom-borders mt-4"></p>
+                                <p class="mb-6 text-md text-gray-500 dark:text-gray-400 mt-4">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece
+                                    of classical Latin literature from 45 BC, making it over 2000 years old.
+                                </p>
+                            </div>
+                            <div class="">
+                                <h3 class="text-1xl font-bold bg-amber-500">GET A FREE QUOTE</h3>
+                                <p class="custom-borders mt-4"></p>
+
+
+                                <input class="w-full rounded mt-4 bg-black p-3" type="text" name="name"
+                                    placeholder="Your Name">
+                                <input class="w-full rounded mt-4 bg-black p-3" type="email" name="email"
+                                    placeholder="Your Email">
+                                <input class="w-full rounded mt-4 bg-black p-3" type="text" name="sub"
+                                    placeholder="Your Subject">
+                                <textarea name="sub" placeholder="Your Message"
+                                    class="w-full rounded mt-4 bg-black text-white p-3" rows="4">
+                                    </textarea>
+                                <div class="btn mt-3">
+                                    <button class="bg-red-600 p-4 rounded w-full font-bold">SEND NOW</button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <h3 class="text-1xl font-bold bg-amber-500 mt-4">CONTACT INFO</h3>
+                                <p class="custom-borders mt-4 mb-4"></p>
+
+                                <div class="flex items-center py-2">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p class="ml-3">031245645</p>
+                                </div>
+                                <div class="flex items-center py-2">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <p class="ml-3">hotmail@gmail.com</p>
+                                </div>
+                                <div class="flex items-center py-2">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p class="ml-3">USA Ohio</p>
+                                </div>
+                            </div>
+                            <div class="socail flex items-center gap-2 py-4">
+                                <div class="p-2 rounded-full aspect-square flex justify-center items-center"
+                                    style="background-color: #353535; width: 35px; height: 35px;">
+                                    <a href="#"
+                                        class="d-inline-flex text-decoration-none align-items-center justify-content-center  text-white rounded-circle"
+                                        style="width: 25px; height: 20px;">
+                                        <i class="fa-brands fa-facebook-f ml-1"></i>
+                                    </a>
+                                </div>
+                                <div class="p-2 rounded-full aspect-square flex justify-center items-center"
+                                    style="background-color: #353535; width: 35px; height: 35px;">
+                                    <a href="#"
+                                        class="d-inline-flex text-decoration-none align-items-center justify-content-center  text-white rounded-circle"
+                                        style="width: 25px; height: 20px;">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="p-2 rounded-full aspect-square flex justify-center items-center"
+                                    style="background-color: #353535; width: 35px; height: 35px;">
+                                    <a href="#"
+                                        class="d-inline-flex text-decoration-none align-items-center justify-content-center  text-white rounded-circle"
+                                        style="width: 25px; height: 20px;">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                                <div class="p-2 rounded-full aspect-square flex justify-center items-center"
+                                    style="background-color: #353535;  width: 35px; height: 35px;">
+                                    <a href="#" class="text-white">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+    <main>
+
+        <section>
+            <div class="container mx-auto" style="margin-top: 100px;">
+                <!-- banner section pending workl -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 gap-4">
+
+                    <div class="">
+                        <h1 class="text-6xl font-bold text-md">
+                            Navigating Tech Horizons Together
+                        </h1>
+                        <div class="mt-40">
+                            <ul class="flex set-content">
+                                <li
+                                    class="border-2 border-gray-400 bg-accent-900 rounded-full p-1 shadow-md hover:scale-105 transition-transform duration-300">
+                                    <img src="assets/images/avatar-1.png" alt="User Avatar"
+                                        class="w-10 h-10 rounded-full object-cover">
+                                </li>
+
+                                <li
+                                    class="border-2 border-gray-400 bg-accent-900 rounded-full p-1 shadow-md hover:scale-105 transition-transform duration-300">
+                                    <img src="assets/images/avatar-1.png" alt="User Avatar"
+                                        class="w-10 h-10 rounded-full object-cover">
+                                </li>
+                                <li
+                                    class="border-2 border-gray-400 bg-accent-900 rounded-full p-1 shadow-md hover:scale-105 transition-transform duration-300">
+                                    <img src="assets/images/avatar-1.png" alt="User Avatar"
+                                        class="w-10 h-10 rounded-full object-cover">
+                                </li>
+                                <li
+                                    class="flex items-center border-2 border-gray-400 bg-accent-900 rounded-full p-1 shadow-md hover:scale-105 transition-transform duration-300">
+                                    <svg stroke="currentColor" fill="red" class="w-10 h-6 rounded-full object-cover"
+                                        stroke-width="0" viewBox="0 0 448 512" height="20" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                                        </path>
+                                    </svg>
+                                </li>
+                                <li class="col-end-4">
+                                    <p class="ml-6 font-bold text-1x5">3,000 +</p>
+                                    <div>
+                                        <p class="ml-6 font-medium text-1xl">Satisfied Customer</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="mt-10 flex justify-between set-content">
+                                <div class="">
+                                    <button
+                                        class=" text-amber-50 px-12 py-4 rounded font-medium text-1x9 flex justify-between items-center"
+                                        style="background-color: rgb(184, 10, 10);">
+                                        <span class="uppercase">
+                                            Discover More
+                                        </span>
+                                        <span class="ms-2">
+                                            <svg class="relative z-1" width="28" height="9" viewBox="0 0 28 9"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M27.7911 5.02543C27.9863 4.83016 27.9863 4.51358 27.7911 4.31832L24.6091 1.13634C24.4138 0.941077 24.0972 0.941077 23.902 1.13634C23.7067 1.3316 23.7067 1.64818 23.902 1.84345L26.7304 4.67187L23.902 7.5003C23.7067 7.69556 23.7067 8.01214 23.902 8.20741C24.0972 8.40267 24.4138 8.40267 24.6091 8.20741L27.7911 5.02543ZM0.4375 5.17188L27.4375 5.17187L27.4375 4.17187L0.4375 4.17188L0.4375 5.17188Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </button>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex set-content mt-5 md:mt-0">
+                        <div class="bg-black w-90 shadowbox rounded-t-full custom-shadow">
+                            <img src="assets/images/hero-5.webp" alt="" class="">
+                        </div>
+
+                    </div>
+
+                    <div class="">
+                        <p class="text-gray-400 text-md mt-5 md:px-3">
+                            It is a long established fact that a reader will be distracted by the readablejk content of
+                            a
+                            page when looking at its layout. Lorem Ipsum is simply dum text of the printing and typeset
+                        </p>
+
+                        <div class="flex set-content">
+                            <img src="assets/images/left.webp" alt="" class="mt-10 px-5 ">
+                        </div>
+                        <div class="mt-10">
+                            <div class="flex justify-between items-center px-5 set-content">
+                                <svg width="65" height="66" viewBox="0 0 65 66" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3142_137)">
+                                        <path
+                                            d="M9.65039 31.3242C11.1868 31.3242 12.5773 30.7079 13.6047 29.718L19.2418 32.5362C19.2135 32.7658 19.1719 32.9915 19.1719 33.2285C19.1719 36.3786 21.7348 38.9414 24.8848 38.9414C28.0347 38.9414 30.5977 36.3785 30.5977 33.2285C30.5977 32.3492 30.3815 31.5261 30.0248 30.7812L37.6719 23.1342C38.4167 23.4908 39.2399 23.707 40.1191 23.707C43.2692 23.707 45.832 21.1441 45.832 17.9941C45.832 17.401 45.7155 16.8401 45.5469 16.3021L52.1911 11.3202C53.0976 11.9258 54.1843 12.2812 55.3535 12.2812C58.5036 12.2812 61.0664 9.71832 61.0664 6.56836C61.0664 3.4184 58.5035 0.855469 55.3535 0.855469C52.2036 0.855469 49.6406 3.4184 49.6406 6.56836C49.6406 7.16148 49.7572 7.72236 49.9258 8.26039L43.2815 13.2423C42.3751 12.6367 41.2884 12.2812 40.1191 12.2812C36.9691 12.2812 34.4062 14.8442 34.4062 17.9941C34.4062 18.8734 34.6224 19.6966 34.9791 20.4414L27.332 28.0884C26.5872 27.7318 25.764 27.5156 24.8848 27.5156C23.3484 27.5156 21.9579 28.132 20.9304 29.1218L15.2933 26.3036C15.3216 26.0741 15.3633 25.8484 15.3633 25.6113C15.3633 22.4612 12.8005 19.8984 9.65039 19.8984C6.5003 19.8984 3.9375 22.4614 3.9375 25.6113C3.9375 28.7613 6.50043 31.3242 9.65039 31.3242Z"
+                                            fill="#DF2A19"></path>
+                                        <path
+                                            d="M63.0957 62.0469H61.0645V21.8027C61.0645 20.7503 60.2126 19.8984 59.1602 19.8984H51.543C50.4905 19.8984 49.6387 20.7503 49.6387 21.8027V62.0469H45.8301V33.2285C45.8301 32.1761 44.9782 31.3242 43.9258 31.3242H36.3086C35.2562 31.3242 34.4043 32.1761 34.4043 33.2285V62.0469H30.5957V48.4629C30.5957 47.4104 29.7438 46.5586 28.6914 46.5586H21.0742C20.0218 46.5586 19.1699 47.4104 19.1699 48.4629V62.0469H15.3613V40.8457C15.3613 39.7933 14.5095 38.9414 13.457 38.9414H5.83984C4.7874 38.9414 3.93555 39.7933 3.93555 40.8457V62.0469H1.9043C0.851855 62.0469 0 62.8987 0 63.9512C0 65.0036 0.851855 65.8555 1.9043 65.8555H63.0957C64.1481 65.8555 65 65.0036 65 63.9512C65 62.8987 64.1481 62.0469 63.0957 62.0469Z"
+                                            fill="#DF2A19"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3142_137">
+                                            <rect width="65" height="65" fill="white" transform="translate(0 0.855469)">
+                                            </rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="font-extrabold text-5xl">4K+</span>
+                                <p>Daily Activated Customers</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- banner section pending workl -->
+
+
+            </div>
+        </section>
+
+
+        <section class="container mx-auto">
+            <div class="mt-40 text-center ">
+                <span class="text-2xl  text-red-800">our services</span>
+            </div>
+
+            <div>
+                <h1 class="text-center text-5xl font-bold">Elevating Businesses with IT Ingenuity</h1>
+            </div>
+
+            <div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+                    <div class="max-w-sm bg-white rounded-xl shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="./service-1.webp" alt="Card Image">
+
+                        <div class="p-4">
+                            <h2 class="text-xl font-semibold text-gray-800 mb-2">Card Title</h2>
+                            <p class="text-gray-600 text-sm">
+                                This is a simple card component using Tailwind CSS. You can put any content here like
+                                text, buttons, etc.
+                            </p>
+                            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="max-w-sm bg-white rounded-xl shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x200"
+                            alt="Card Image">
+
+                        <div class="p-4">
+                            <h2 class="text-xl font-semibold text-gray-800 mb-2">Card Title</h2>
+                            <p class="text-gray-600 text-sm">
+                                This is a simple card component using Tailwind CSS. You can put any content here like
+                                text, buttons, etc.
+                            </p>
+                            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="max-w-sm bg-white rounded-xl shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x200"
+                            alt="Card Image">
+
+                        <div class="p-4">
+                            <h2 class="text-xl font-semibold text-gray-800 mb-2">Card Title</h2>
+                            <p class="text-gray-600 text-sm">
+                                This is a simple card component using Tailwind CSS. You can put any content here like
+                                text, buttons, etc.
+                            </p>
+                            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- about us section -->
+        <section>
+            <div class="container mx-auto" style="margin-top: 8rem;">
+                <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 gap-4">
+                    <div>
+                        <h3 class="uppercase text-color font-bold text-lg">About us</h3>
+                        <h1 class="text-5xl font-bold">Sculpting Digital Landscapes</h1>
+                        <p class="mt-8 text-gray-400">Nulla vitae ex nunc. Morbi quis purus convallis, fermentum metus volutpat, sodales purus.
+                            Nunc quis an mauris et eros vulputate mattis Nulla vitae ex nunc. Morbi quis purus
+                            convallis, fermentum metus the volutpatquis purus convallis</p>
+                    </div>
+                    <div class="">
+                        <div class="">
+                            <img src="assets/images/about-5.webp" class="" alt="" style="width: 552px; height: 587px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script>
+        // Simple JS to toggle menu on mobile
+        document.getElementById('menuToggle').addEventListener('click', () => {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

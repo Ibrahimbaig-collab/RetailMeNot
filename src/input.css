@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+.after\:bg-current:after {
+    content: var(--tw-content);
+    background-color: currentColor;
+}
+
+.custom-borders {
+    border-bottom: solid 2px rgb(255, 255, 255) !important;
+    width: 50px;
+}
+
+.social-icons:hover {
+    background-color: brown;
+}
+
+.bg-set {
+    background-color: rgb(26, 30, 28);
+}
+
+.bg-set-0 {
+    background-color: rgb(24, 24, 24);
+}
+
+.bg-set-1 {
+    background-color: rgb(33, 33, 36, 1);
+}
+.text-color{
+    color: rgb(184, 10, 10);
+}
+.custom-shadow {
+    background-color: rgb(26, 30, 28);
+    padding: 1.25rem 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    box-shadow: 20px 20px 0px rgb(150, 18, 15, 40);
+    
+}
+@media (max-width:1025px) {
+        .text-md{
+            text-align: center;
+        }
+        .set-content{
+            justify-content: center;
+        }
+}

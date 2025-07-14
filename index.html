@@ -28,18 +28,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             }
         }
 
-      
-.custom-group {
-  transform: translateX(-200px);
-  opacity: 0;
-  transition: transform 0.5s ease, opacity 0.6s ease;
-}
 
-.group:hover .custom-group {
-  transform: translateX(15rem);
-  opacity: 1;
-}
+        .custom-group {
+            transform: translateX(-200px);
+            opacity: 0;
+            transition: transform 0.5s ease, opacity 0.6s ease;
+        }
 
+        .group:hover .custom-group {
+            transform: translateX(15rem);
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -417,7 +416,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
     <main>
-       
+
 
         <section>
             <div class="container mx-auto" style="margin-top: 100px;">
@@ -551,7 +550,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <!-- image div  -->
                         <div
                             class="relative z-1 before:absolute before:-bottom-px before:-right-px before:left-0 before:z-[2] before:h-[65px] before:bg-white before:[clip-path:polygon(100%_0%,0%_100%,100%_100%)] dark:before:bg-accent-700 after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-1 after:h-0 after:w-full after:bg-white/30 after:opacity-100 group-hover:transition-all group-hover:after:h-full group-hover:after:opacity-0 group-hover:after:duration-400 group-hover:after:ease-linear">
-                            <img class="w-full h-62 relative object-cover" src="assets/images/hero-5.webp" alt="Card Image">
+                            <img class="w-full h-62 relative object-cover" src="assets/images/hero-5.webp"
+                                alt="Card Image">
                         </div>
 
                         <!-- card body -->
@@ -925,7 +925,99 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <!-- section 4  -->
 
         <!-- about us section -->
-      
+        <section>
+
+            <div class="container mx-auto px-4" style="margin-top: 8rem;">
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-36">
+                    <div class="lg:col-span-7 col-span-1 p-4">
+                        <div class="mt-20 ">
+                            <h3 class="uppercase text-color font-bold text-lg">About us</h3>
+                            <h1 class="text-5xl font-bold">Sculpting Digital Landscapes</h1>
+                            <p class="mt-8 text-gray-400">Nulla vitae ex nunc. Morbi quis purus convallis, fermentum
+                                metus
+                                volutpat, sodales purus.
+                                Nunc quis an mauris et eros vulputate mattis Nulla vitae ex nunc. Morbi quis purus
+                                convallis, fermentum metus the volutpatquis purus convallis</p>
+
+                            <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-4 gap-4">
+                                <!-- Item 1 -->
+                                <div class=" flex items-center ">
+                                    <span class="bg-[#b91202] rounded-full w-7 h-7 flex items-center justify-center">
+                                        <i class="fa-solid fa-check text-black"></i>
+                                    </span>
+                                    <span class="font-bold ms-3">Mistakes To Avoid</span>
+                                </div>
+
+                                <!-- Repeat for other items -->
+                                <div class=" flex items-center ">
+                                    <span class="bg-[#b91202] rounded-full  w-7 h-7 flex items-center justify-center">
+                                        <i class="fa-solid fa-check text-black"></i>
+                                    </span>
+                                    <span class="font-bold ms-3">Mistakes To Avoid</span>
+                                </div>
+
+                                <div class=" flex items-center ">
+                                    <span class="bg-[#b91202] rounded-full  w-7 h-7 flex items-center justify-center">
+                                        <i class="fa-solid fa-check text-black"></i>
+                                    </span>
+                                    <span class="font-bold ms-3">Mistakes To Avoid</span>
+                                </div>
+
+                                <div class=" flex items-center ">
+                                    <span class="bg-[#b91202] rounded-full  w-7 h-7 flex items-center justify-center">
+                                        <i class="fa-solid fa-check text-black"></i>
+                                    </span>
+                                    <span class="font-bold ms-3">Mistakes To Avoid</span>
+                                </div>
+
+                                <div class=" flex items-center ">
+                                    <span class="bg-[#b91202] rounded-full  w-7 h-7 flex items-center justify-center">
+                                        <i class="fa-solid fa-check text-black"></i>
+                                    </span>
+                                    <span class="font-bold ms-3">Mistakes To Avoid</span>
+                                </div>
+
+                                <div class=" flex items-center ">
+                                    <span class="bg-[#b91202] rounded-full  w-7 h-7 flex items-center justify-center">
+                                        <i class="fa-solid fa-check text-black"></i>
+                                    </span>
+                                    <span class="font-bold ms-3">Mistakes To Avoid</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5  p-4">
+                        <div class="relative inline-block group ">
+                            <!-- Background behind image -->
+                            <div
+                                class="absolute left-0 top-0 -z-10 w-[500px] h-[500px]  rotate-3 rounded-[20px] bg-[#b91202] transition-transform duration-300 group-hover:rotate-[2deg] md:rotate-[5deg] ">
+                            </div>
+
+                            <!-- Image -->
+                            <div class="">
+                                <img src="assets/images/about-5.webp" alt=""
+                                    class="w-[500px] h-[500px] rounded-[20px] relative z-10 relative z-1 before:absolute before:-bottom-px before:-right-px before:left-0 before:z-[2] before:h-[65px] before:bg-white before:[clip-path:polygon(100%_0%,0%_100%,100%_100%)] dark:before:bg-accent-700 after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-1 after:h-0 after:w-full after:bg-white/30 after:opacity-100 group-hover:transition-all group-hover:after:h-full group-hover:after:opacity-0 group-hover:after:duration-400 group-hover:after:ease-linear" />
+                            </div>
+                            <span
+                                class="cursor-pointer absolute left-1/3 top-1/2 z-10 inline-block -translate-x-1/2 -translate-y-1/2"><span
+                                    class="w-[100px] h-[100px] rounded-5 bg-[#b91202] grid place-items-center duration-350 text-white hover:bg-black transition-all text-[2.5rem] md:text-[6.25rem] relative after:absolute after:inset-0 after:[box-shadow:0_0_0_0_rgb(255_255_255/60%)] after:[animation-delay:.6s] after:transition-all after:animate-ripple after:rounded-[inherit] before:absolute before:inset-0 before:[box-shadow:0_0_0_0_rgb(255_255_255/60%)] before:transition-all before:animate-ripple before:rounded-[inherit]"><svg
+                                        width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.82617 0.546509L15.0762 7.42151C15.623 7.77307 15.9746 8.39807 15.9746 9.02307C15.9746 9.68713 15.623 10.3121 15.0762 10.6246L3.82617 17.4996C3.24023 17.8512 2.49805 17.8903 1.91211 17.5387C1.32617 17.2262 0.974609 16.6012 0.974609 15.8981V2.14807C0.974609 1.48401 1.32617 0.859009 1.91211 0.546509C2.49805 0.194946 3.24023 0.194946 3.82617 0.546509Z"
+                                            fill="white"></path>
+                                    </svg></span></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
 
         <!-- about section end  -->
 
@@ -964,7 +1056,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
                         <div
                             class="  max-w-full lg:max-w-full  p-10 bg-[#1A1A1C] rounded-lg shadow-sm  dark:border-gray-700">
-                            <div class="flex items-center gap-5"><div class="relative flex-none"><span class="absolute -top-3 inline-block h-16 w-16 rounded-full bg-[#b91202]"></span><span class="relative -left-3 top-3 z-1 text-white"><svg width="65" height="66" viewBox="0 0 65 66" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M60.9375 30.9651H52.8125V22.8401C52.8071 20.7091 52.4713 18.5918 51.8172 16.5636L60.3484 8.03233C60.7309 7.64984 60.9458 7.13107 60.9458 6.59014C60.9458 6.04922 60.7309 5.53045 60.3484 5.14796C59.9659 4.76547 59.4472 4.55058 58.9062 4.55058C58.3653 4.55058 57.8466 4.76547 57.4641 5.14796L50.0094 12.6839C48.2159 9.63409 45.6569 7.10563 42.5858 5.34887C39.5147 3.5921 36.0381 2.66797 32.5 2.66797C28.9619 2.66797 25.4852 3.5921 22.4142 5.34887C19.3431 7.10563 16.7841 9.63409 14.9906 12.6839L7.53594 5.14796C7.34655 4.95857 7.12171 4.80833 6.87426 4.70584C6.62681 4.60334 6.36159 4.55058 6.09375 4.55058C5.82591 4.55058 5.56069 4.60334 5.31324 4.70584C5.06579 4.80833 4.84095 4.95857 4.65156 5.14796C4.26907 5.53045 4.05419 6.04922 4.05419 6.59014C4.05419 7.13107 4.26907 7.64984 4.65156 8.03233L13.1828 16.5636C12.5287 18.5918 12.1929 20.7091 12.1875 22.8401V30.9651H4.0625C3.52378 30.9651 3.00712 31.1791 2.62619 31.5601C2.24526 31.941 2.03125 32.4577 2.03125 32.9964C2.03125 33.5351 2.24526 34.0518 2.62619 34.4327C3.00712 34.8136 3.52378 35.0276 4.0625 35.0276H12.1875V43.1526C12.1929 45.2837 12.5287 47.401 13.1828 49.4292L4.65156 57.9605C4.26907 58.343 4.05419 58.8617 4.05419 59.4026C4.05419 59.9436 4.26907 60.4623 4.65156 60.8448C5.03405 61.2273 5.55282 61.4422 6.09375 61.4422C6.63468 61.4422 7.15345 61.2273 7.53594 60.8448L14.9906 53.3089C16.7841 56.3587 19.3431 58.8872 22.4142 60.6439C25.4852 62.4007 28.9619 63.3248 32.5 63.3248C36.0381 63.3248 39.5147 62.4007 42.5858 60.6439C45.6569 58.8872 48.2159 56.3587 50.0094 53.3089L57.4641 60.7636C57.8466 61.1461 58.3653 61.361 58.9062 61.361C59.4472 61.361 59.9659 61.1461 60.3484 60.7636C60.7309 60.3811 60.9458 59.8623 60.9458 59.3214C60.9458 58.7805 60.7309 58.2617 60.3484 57.8792L51.8172 49.348C52.4631 47.3457 52.7988 45.2564 52.8125 43.1526V35.0276H60.9375C61.4762 35.0276 61.9929 34.8136 62.3738 34.4327C62.7547 34.0518 62.9688 33.5351 62.9688 32.9964C62.9688 32.4577 62.7547 31.941 62.3738 31.5601C61.9929 31.1791 61.4762 30.9651 60.9375 30.9651ZM32.5 6.59014C36.4554 6.59373 40.2738 8.03989 43.2392 10.6575C46.2046 13.2751 48.1134 16.8845 48.6078 20.8089H16.3922C16.8866 16.8845 18.7955 13.2751 21.7608 10.6575C24.7262 8.03989 28.5446 6.59373 32.5 6.59014ZM34.5312 59.2605V30.9651C34.5312 30.4264 34.3172 29.9098 33.9363 29.5288C33.5554 29.1479 33.0387 28.9339 32.5 28.9339C31.9613 28.9339 31.4446 29.1479 31.0637 29.5288C30.6828 29.9098 30.4688 30.4264 30.4688 30.9651V59.2605C26.5443 58.766 22.935 56.8572 20.3174 53.8918C17.6997 50.9264 16.2536 47.1081 16.25 43.1526V24.8714H48.75V43.1526C48.7464 47.1081 47.3003 50.9264 44.6826 53.8918C42.065 56.8572 38.4557 58.766 34.5312 59.2605Z"></path></svg></span></div><h3 class="h3 text-accent-900 dark:text-white">Cyber Scape Defend</h3></div>
+                            <div class="flex items-center gap-5">
+                                <div class="relative flex-none"><span
+                                        class="absolute -top-3 inline-block h-16 w-16 rounded-full bg-[#b91202]"></span><span
+                                        class="relative -left-3 top-3 z-1 text-white"><svg width="65" height="66"
+                                            viewBox="0 0 65 66" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M60.9375 30.9651H52.8125V22.8401C52.8071 20.7091 52.4713 18.5918 51.8172 16.5636L60.3484 8.03233C60.7309 7.64984 60.9458 7.13107 60.9458 6.59014C60.9458 6.04922 60.7309 5.53045 60.3484 5.14796C59.9659 4.76547 59.4472 4.55058 58.9062 4.55058C58.3653 4.55058 57.8466 4.76547 57.4641 5.14796L50.0094 12.6839C48.2159 9.63409 45.6569 7.10563 42.5858 5.34887C39.5147 3.5921 36.0381 2.66797 32.5 2.66797C28.9619 2.66797 25.4852 3.5921 22.4142 5.34887C19.3431 7.10563 16.7841 9.63409 14.9906 12.6839L7.53594 5.14796C7.34655 4.95857 7.12171 4.80833 6.87426 4.70584C6.62681 4.60334 6.36159 4.55058 6.09375 4.55058C5.82591 4.55058 5.56069 4.60334 5.31324 4.70584C5.06579 4.80833 4.84095 4.95857 4.65156 5.14796C4.26907 5.53045 4.05419 6.04922 4.05419 6.59014C4.05419 7.13107 4.26907 7.64984 4.65156 8.03233L13.1828 16.5636C12.5287 18.5918 12.1929 20.7091 12.1875 22.8401V30.9651H4.0625C3.52378 30.9651 3.00712 31.1791 2.62619 31.5601C2.24526 31.941 2.03125 32.4577 2.03125 32.9964C2.03125 33.5351 2.24526 34.0518 2.62619 34.4327C3.00712 34.8136 3.52378 35.0276 4.0625 35.0276H12.1875V43.1526C12.1929 45.2837 12.5287 47.401 13.1828 49.4292L4.65156 57.9605C4.26907 58.343 4.05419 58.8617 4.05419 59.4026C4.05419 59.9436 4.26907 60.4623 4.65156 60.8448C5.03405 61.2273 5.55282 61.4422 6.09375 61.4422C6.63468 61.4422 7.15345 61.2273 7.53594 60.8448L14.9906 53.3089C16.7841 56.3587 19.3431 58.8872 22.4142 60.6439C25.4852 62.4007 28.9619 63.3248 32.5 63.3248C36.0381 63.3248 39.5147 62.4007 42.5858 60.6439C45.6569 58.8872 48.2159 56.3587 50.0094 53.3089L57.4641 60.7636C57.8466 61.1461 58.3653 61.361 58.9062 61.361C59.4472 61.361 59.9659 61.1461 60.3484 60.7636C60.7309 60.3811 60.9458 59.8623 60.9458 59.3214C60.9458 58.7805 60.7309 58.2617 60.3484 57.8792L51.8172 49.348C52.4631 47.3457 52.7988 45.2564 52.8125 43.1526V35.0276H60.9375C61.4762 35.0276 61.9929 34.8136 62.3738 34.4327C62.7547 34.0518 62.9688 33.5351 62.9688 32.9964C62.9688 32.4577 62.7547 31.941 62.3738 31.5601C61.9929 31.1791 61.4762 30.9651 60.9375 30.9651ZM32.5 6.59014C36.4554 6.59373 40.2738 8.03989 43.2392 10.6575C46.2046 13.2751 48.1134 16.8845 48.6078 20.8089H16.3922C16.8866 16.8845 18.7955 13.2751 21.7608 10.6575C24.7262 8.03989 28.5446 6.59373 32.5 6.59014ZM34.5312 59.2605V30.9651C34.5312 30.4264 34.3172 29.9098 33.9363 29.5288C33.5554 29.1479 33.0387 28.9339 32.5 28.9339C31.9613 28.9339 31.4446 29.1479 31.0637 29.5288C30.6828 29.9098 30.4688 30.4264 30.4688 30.9651V59.2605C26.5443 58.766 22.935 56.8572 20.3174 53.8918C17.6997 50.9264 16.2536 47.1081 16.25 43.1526V24.8714H48.75V43.1526C48.7464 47.1081 47.3003 50.9264 44.6826 53.8918C42.065 56.8572 38.4557 58.766 34.5312 59.2605Z">
+                                            </path>
+                                        </svg></span></div>
+                                <h3 class="h3 text-accent-900 dark:text-white">Cyber Scape Defend</h3>
+                            </div>
 
                             <div class="mt-5">
                                 <p class="mb-3 font-normal leading-loose text-[#BEBEBE]">
@@ -1472,111 +1574,162 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </section>
         <!-- nav and tabs  end-->
 
-<!-- our actice memeber section only visible large screen  -->
-<section class=" hidden lg:block">
-  <div class="container mx-auto my-20">
-    <div class="flex justify-between items-center border-b group relative ">
+        <!-- our actice memeber section only visible large screen  -->
+        <section class=" hidden lg:block">
+            <div class="container mx-auto my-20">
+                <div class="flex justify-between items-center border-b group relative ">
 
-      <!-- Text Column -->
-      <div class="padding-set">
-        <p class="font-bold text-2xl text-image">John Admin Smith</p>
-      </div>
+                    <!-- Text Column -->
+                    <div class="padding-set">
+                        <p class="font-bold text-2xl text-image">John Admin Smith</p>
+                    </div>
 
-      <!-- Image - initially hidden on left -->
-      <div class="absolute left-170 top-1/2 -translate-y-1/2">
-        <img src="assets/images/about-5.webp"
-             class="img-fluid custom-group rounded-full w-50 h-50"
-             alt="">
-      </div>
+                    <!-- Image - initially hidden on left -->
+                    <div class="absolute left-170 top-1/2 -translate-y-1/2">
+                        <img src="assets/images/about-5.webp" class="img-fluid custom-group rounded-full w-50 h-50"
+                            alt="">
+                    </div>
 
-      <!-- Other content -->
-      <div style="padding-right: 28rem !important;">
-        <p>Medical Assistant</p>
-      </div>
+                    <!-- Other content -->
+                    <div style="padding-right: 28rem !important;">
+                        <p>Medical Assistant</p>
+                    </div>
 
-     <div class="group relative cursor-pointer text-lg/[1] text-body"><span class="hidden lg:block "><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
-                                    </path>
-                                </svg></span>
-                            <ul aria-label="Esther Howard social-links" class="inline-flex items-center gap-2.5 lg:absolute lg:right-[calc(100%+30px)] lg:top-1/2 lg:-translate-y-1/2 lg:overflow-hidden lg:[&amp;_li:nth-child(1)]:[transition-delay:200ms] lg:[&amp;_li:nth-child(2)]:[transition-delay:300ms] lg:[&amp;_li:nth-child(3)]:[transition-delay:400ms] lg:[&amp;_li:nth-child(4)]:[transition-delay:500ms] lg:[&amp;_li:nth-child(5)]:[transition-delay:600ms] lg:[&amp;_li:nth-child(6)]:[transition-delay:700ms] lg:[&amp;_li:nth-child(7)]:[transition-delay:800ms] transition-all ease-out lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
-                                <li class="opacity-0 [transform-origin:bottom] [transform:perspective(400px)_rotateY(0deg)_translateY(80px)] [transition:all_.5s_ease] group-hover:opacity-100 group-hover:[transform:perspective(400px)_rotateY(0deg)_translateY(0px)] max-lg:[all:unset]">
-                                    <a target="_blank" aria-label="Esther Howard's social https://www.facebook.com/" class="relative z-1 inline-grid h-[42px] w-[42px] place-items-center overflow-hidden rounded-full border-2 border-accent-800 border-opacity-20 bg-transparent text-[1.125rem]/[1] text-body transition-colors hover:border-primary hover:text-white after:invisible after:absolute after:inset-0 after:-z-1 after:scale-50 after:rounded-[inherit] after:bg-primary after:opacity-0 after:duration-500 after:[transition:.5s_ease-in-out] hover:after:visible hover:after:scale-100 hover:after:opacity-100" href="https://www.facebook.com/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
-                                            </path>
-                                        </svg></a></li>
-                                <li class="opacity-0 [transform-origin:bottom] [transform:perspective(400px)_rotateY(0deg)_translateY(80px)] [transition:all_.5s_ease] group-hover:opacity-100 group-hover:[transform:perspective(400px)_rotateY(0deg)_translateY(0px)] max-lg:[all:unset]">
-                                    <a target="_blank" aria-label="Esther Howard's social https://twitter.com/" class="relative z-1 inline-grid h-[42px] w-[42px] place-items-center overflow-hidden rounded-full border-2 border-accent-800 border-opacity-20 bg-transparent text-[1.125rem]/[1] text-body transition-colors hover:border-primary hover:text-white after:invisible after:absolute after:inset-0 after:-z-1 after:scale-50 after:rounded-[inherit] after:bg-primary after:opacity-0 after:duration-500 after:[transition:.5s_ease-in-out] hover:after:visible hover:after:scale-100 hover:after:opacity-100" href="https://twitter.com/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
-                                            </path>
-                                        </svg></a></li>
-                                <li class="opacity-0 [transform-origin:bottom] [transform:perspective(400px)_rotateY(0deg)_translateY(80px)] [transition:all_.5s_ease] group-hover:opacity-100 group-hover:[transform:perspective(400px)_rotateY(0deg)_translateY(0px)] max-lg:[all:unset]">
-                                    <a target="_blank" aria-label="Esther Howard's social https://www.linkedin.com/" class="relative z-1 inline-grid h-[42px] w-[42px] place-items-center overflow-hidden rounded-full border-2 border-accent-800 border-opacity-20 bg-transparent text-[1.125rem]/[1] text-body transition-colors hover:border-primary hover:text-white after:invisible after:absolute after:inset-0 after:-z-1 after:scale-50 after:rounded-[inherit] after:bg-primary after:opacity-0 after:duration-500 after:[transition:.5s_ease-in-out] hover:after:visible hover:after:scale-100 hover:after:opacity-100" href="https://www.linkedin.com/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                            </path>
-                                        </svg></a></li>
-                                <li class="opacity-0 [transform-origin:bottom] [transform:perspective(400px)_rotateY(0deg)_translateY(80px)] [transition:all_.5s_ease] group-hover:opacity-100 group-hover:[transform:perspective(400px)_rotateY(0deg)_translateY(0px)] max-lg:[all:unset]">
-                                    <a target="_blank" aria-label="Esther Howard's social https://www.pinterest.com/" class="relative z-1 inline-grid h-[42px] w-[42px] place-items-center overflow-hidden rounded-full border-2 border-accent-800 border-opacity-20 bg-transparent text-[1.125rem]/[1] text-body transition-colors hover:border-primary hover:text-white after:invisible after:absolute after:inset-0 after:-z-1 after:scale-50 after:rounded-[inherit] after:bg-primary after:opacity-0 after:duration-500 after:[transition:.5s_ease-in-out] hover:after:visible hover:after:scale-100 hover:after:opacity-100" href="https://www.pinterest.com/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z">
-                                            </path>
-                                        </svg></a></li>
-                            </ul>
-                        </div>
-    </div>
-  </div>
-</section>
-<!-- our actice memeber section only visible large screen  -->
-
-<!-- mobile device section  -->
-<section class="block lg:hidden">
-    <div class="container mx-auto " >
-        <div class="grid grid-cols-1 lg:grid-cols-1 md:grid-cols-1 gap-10">
-            <div>
-                <img src="assets/images/about-5.webp" alt="" class="img-fluid rounded-full w-full h-full">
-               
+                    <div class="group relative cursor-pointer text-lg/[1] text-body"><span class="hidden lg:block "><svg
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                                </path>
+                            </svg></span>
+                        <ul aria-label="Esther Howard social-links"
+                            class="inline-flex items-center gap-2.5 lg:absolute lg:right-[calc(100%+30px)] lg:top-1/2 lg:-translate-y-1/2 lg:overflow-hidden lg:[&amp;_li:nth-child(1)]:[transition-delay:200ms] lg:[&amp;_li:nth-child(2)]:[transition-delay:300ms] lg:[&amp;_li:nth-child(3)]:[transition-delay:400ms] lg:[&amp;_li:nth-child(4)]:[transition-delay:500ms] lg:[&amp;_li:nth-child(5)]:[transition-delay:600ms] lg:[&amp;_li:nth-child(6)]:[transition-delay:700ms] lg:[&amp;_li:nth-child(7)]:[transition-delay:800ms] transition-all ease-out lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+                            <li
+                                class="opacity-0 [transform-origin:bottom] [transform:perspective(400px)_rotateY(0deg)_translateY(80px)] [transition:all_.5s_ease] group-hover:opacity-100 group-hover:[transform:perspective(400px)_rotateY(0deg)_translateY(0px)] max-lg:[all:unset]">
+                                <a target="_blank" aria-label="Esther Howard's social https://www.facebook.com/"
+                                    class="relative z-1 inline-grid h-[42px] w-[42px] place-items-center overflow-hidden rounded-full border-2 border-accent-800 border-opacity-20 bg-transparent text-[1.125rem]/[1] text-body transition-colors hover:border-primary hover:text-white after:invisible after:absolute after:inset-0 after:-z-1 after:scale-50 after:rounded-[inherit] after:bg-primary after:opacity-0 after:duration-500 after:[transition:.5s_ease-in-out] hover:after:visible hover:after:scale-100 hover:after:opacity-100"
+                                    href="https://www.facebook.com/"><svg stroke="currentColor" fill="currentColor"
+                                        stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                        </path>
+                                    </svg></a>
+                            </li>
+                            <li
+                                class="opacity-0 [transform-origin:bottom] [transform:perspective(400px)_rotateY(0deg)_translateY(80px)] [transition:all_.5s_ease] group-hover:opacity-100 group-hover:[transform:perspective(400px)_rotateY(0deg)_translateY(0px)] max-lg:[all:unset]">
+                                <a target="_blank" aria-label="Esther Howard's social https://twitter.com/"
+                                    class="relative z-1 inline-grid h-[42px] w-[42px] place-items-center overflow-hidden rounded-full border-2 border-accent-800 border-opacity-20 bg-transparent text-[1.125rem]/[1] text-body transition-colors hover:border-primary hover:text-white after:invisible after:absolute after:inset-0 after:-z-1 after:scale-50 after:rounded-[inherit] after:bg-primary after:opacity-0 after:duration-500 after:[transition:.5s_ease-in-out] hover:after:visible hover:after:scale-100 hover:after:opacity-100"
+                                    href="https://twitter.com/"><svg stroke="currentColor" fill="currentColor"
+                                        stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                        </path>
+                                    </svg></a>
+                            </li>
+                            <li
+                                class="opacity-0 [transform-origin:bottom] [transform:perspective(400px)_rotateY(0deg)_translateY(80px)] [transition:all_.5s_ease] group-hover:opacity-100 group-hover:[transform:perspective(400px)_rotateY(0deg)_translateY(0px)] max-lg:[all:unset]">
+                                <a target="_blank" aria-label="Esther Howard's social https://www.linkedin.com/"
+                                    class="relative z-1 inline-grid h-[42px] w-[42px] place-items-center overflow-hidden rounded-full border-2 border-accent-800 border-opacity-20 bg-transparent text-[1.125rem]/[1] text-body transition-colors hover:border-primary hover:text-white after:invisible after:absolute after:inset-0 after:-z-1 after:scale-50 after:rounded-[inherit] after:bg-primary after:opacity-0 after:duration-500 after:[transition:.5s_ease-in-out] hover:after:visible hover:after:scale-100 hover:after:opacity-100"
+                                    href="https://www.linkedin.com/"><svg stroke="currentColor" fill="currentColor"
+                                        stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                                        </path>
+                                    </svg></a>
+                            </li>
+                            <li
+                                class="opacity-0 [transform-origin:bottom] [transform:perspective(400px)_rotateY(0deg)_translateY(80px)] [transition:all_.5s_ease] group-hover:opacity-100 group-hover:[transform:perspective(400px)_rotateY(0deg)_translateY(0px)] max-lg:[all:unset]">
+                                <a target="_blank" aria-label="Esther Howard's social https://www.pinterest.com/"
+                                    class="relative z-1 inline-grid h-[42px] w-[42px] place-items-center overflow-hidden rounded-full border-2 border-accent-800 border-opacity-20 bg-transparent text-[1.125rem]/[1] text-body transition-colors hover:border-primary hover:text-white after:invisible after:absolute after:inset-0 after:-z-1 after:scale-50 after:rounded-[inherit] after:bg-primary after:opacity-0 after:duration-500 after:[transition:.5s_ease-in-out] hover:after:visible hover:after:scale-100 hover:after:opacity-100"
+                                    href="https://www.pinterest.com/"><svg stroke="currentColor" fill="currentColor"
+                                        stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z">
+                                        </path>
+                                    </svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-              <div>
-              <p class="text-center font-bold text-3xl ">Leslie Alexander</p>
-              <p class="text-center font-medium text-1xl ">Medical Assistant</p>
-            </div>
+        </section>
+        <!-- our actice memeber section only visible large screen  -->
 
-            <div class="flex justify-center">
-                <nav aria-label="social links">
+        <!-- mobile device section  -->
+        <section class="block lg:hidden">
+            <div class="container mx-auto ">
+                <div class="grid grid-cols-1 lg:grid-cols-1 md:grid-cols-1 gap-10">
+                    <div>
+                        <img src="assets/images/about-5.webp" alt="" class="img-fluid rounded-full w-full h-full">
+
+                    </div>
+                    <div>
+                        <p class="text-center font-bold text-3xl ">Leslie Alexander</p>
+                        <p class="text-center font-medium text-1xl ">Medical Assistant</p>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <nav aria-label="social links">
                             <ul class="inline-flex items-center gap-2.5">
                                 <li>
-                                    <a target="_blank" aria-label="https://www.facebook.com/" class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded-5 grid place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300  " href="https://www.facebook.com/">
+                                    <a target="_blank" aria-label="https://www.facebook.com/"
+                                        class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded-5 grid place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300  "
+                                        href="https://www.facebook.com/">
                                         <span>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 320 512" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
                                                 </path>
                                             </svg>
                                         </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" aria-label="https://www.facebook.com/" class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded-5 grid place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300" href="https://www.facebook.com/">
+                                    <a target="_blank" aria-label="https://www.facebook.com/"
+                                        class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded-5 grid place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300"
+                                        href="https://www.facebook.com/">
                                         <span>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 320 512" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
                                                 </path>
                                             </svg>
                                         </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" aria-label="https://www.facebook.com/" class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded-5 grid rounded place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300 " href="https://www.facebook.com/">
+                                    <a target="_blank" aria-label="https://www.facebook.com/"
+                                        class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded-5 grid rounded place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300 "
+                                        href="https://www.facebook.com/">
                                         <span>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 320 512" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
                                                 </path>
                                             </svg>
                                         </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" aria-label="https://www.facebook.com/" class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded rounded-5 grid place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300 " href="https://www.facebook.com/">
+                                    <a target="_blank" aria-label="https://www.facebook.com/"
+                                        class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded rounded-5 grid place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300 "
+                                        href="https://www.facebook.com/">
                                         <span>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 320 512" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
                                                 </path>
                                             </svg>
                                         </span>
@@ -1586,55 +1739,75 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
                             </ul>
                         </nav>
-            </div>
-         
-         
-             <div>
-                <img src="assets/images/about-5.webp" alt="" class="img-fluid rounded-full w-full h-full">
-            </div>
-               <div>
-              <p class="text-center font-bold text-3xl ">Leslie Alexander</p>
-              <p class="text-center font-medium text-1xl ">Medical Assistant</p>
-            </div>
+                    </div>
 
-            <div class="flex justify-center">
-                <nav aria-label="social links">
+
+                    <div>
+                        <img src="assets/images/about-5.webp" alt="" class="img-fluid rounded-full w-full h-full">
+                    </div>
+                    <div>
+                        <p class="text-center font-bold text-3xl ">Leslie Alexander</p>
+                        <p class="text-center font-medium text-1xl ">Medical Assistant</p>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <nav aria-label="social links">
                             <ul class="inline-flex items-center gap-2.5">
                                 <li>
-                                    <a target="_blank" aria-label="https://www.facebook.com/" class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded-5 grid place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300  " href="https://www.facebook.com/">
+                                    <a target="_blank" aria-label="https://www.facebook.com/"
+                                        class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded-5 grid place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300  "
+                                        href="https://www.facebook.com/">
                                         <span>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 320 512" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
                                                 </path>
                                             </svg>
                                         </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" aria-label="https://www.facebook.com/" class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded-5 grid place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300" href="https://www.facebook.com/">
+                                    <a target="_blank" aria-label="https://www.facebook.com/"
+                                        class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded-5 grid place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300"
+                                        href="https://www.facebook.com/">
                                         <span>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 320 512" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
                                                 </path>
                                             </svg>
                                         </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" aria-label="https://www.facebook.com/" class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded-5 grid rounded place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300 " href="https://www.facebook.com/">
+                                    <a target="_blank" aria-label="https://www.facebook.com/"
+                                        class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded-5 grid rounded place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300 "
+                                        href="https://www.facebook.com/">
                                         <span>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 320 512" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
                                                 </path>
                                             </svg>
                                         </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" aria-label="https://www.facebook.com/" class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded rounded-5 grid place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300 " href="https://www.facebook.com/">
+                                    <a target="_blank" aria-label="https://www.facebook.com/"
+                                        class="text-base/[1] transition-all duration-350 hover:-translate-y-1 w-30px h-30px rounded rounded-5 grid place-items-center rounded-full w-15 h-15 bg-transparent border-1 border-gray-300 "
+                                        href="https://www.facebook.com/">
                                         <span>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 320 512" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
                                                 </path>
                                             </svg>
                                         </span>
@@ -1644,11 +1817,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
                             </ul>
                         </nav>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- mobile device section  -->
+        </section>
+        <!-- mobile device section  -->
 
 
         <!-- Testinomial section  -->
@@ -1907,40 +2080,43 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <div class="grid grid-cols-1 mt-10 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-10 ">
                     <div class="max-w-full    rounded-lg shadow-sm  bg-[#1A1A1C]">
 
-                        <div class="group relative z-1 block overflow-hidden rounded-5 bg-white shadow-3 dark:bg-accent-700 dark:shadow-none">
-                            <div class="relative overflow-hidden after:absolute after:inset-0 after:z-1 after:transition-all after:[transition:all_0.6s_ease-out_0s] before:absolute before:inset-0 before:z-1 before:transition-all before:[transition:all_0.6s_ease-out_0s] group-hover:after:bottom-1/2 group-hover:after:top-1/2 group-hover:after:bg-white/20 group-hover:before:left-1/2 group-hover:before:right-1/2 group-hover:before:bg-white/20" >
-                            <a href="#" class="relative block ">
-                                <img class="rounded-t-lg w-full class-zoom" src="assets/images/12.webp" alt="" />
+                        <div
+                            class="group relative z-1 block overflow-hidden rounded-5 bg-white shadow-3 dark:bg-accent-700 dark:shadow-none">
+                            <div
+                                class="relative overflow-hidden after:absolute after:inset-0 after:z-1 after:transition-all after:[transition:all_0.6s_ease-out_0s] before:absolute before:inset-0 before:z-1 before:transition-all before:[transition:all_0.6s_ease-out_0s] group-hover:after:bottom-1/2 group-hover:after:top-1/2 group-hover:after:bg-white/20 group-hover:before:left-1/2 group-hover:before:right-1/2 group-hover:before:bg-white/20">
+                                <a href="#" class="relative block ">
+                                    <img class="rounded-t-lg w-full class-zoom" src="assets/images/12.webp" alt="" />
 
-                                <!-- Black overlay div at center bottom -->
-                                <div
-                                    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4 bg-[#1A1A1C] text-white px-4 py-2 rounded w-auto lg:w-100">
-                                    <div class="flex justify-between items-center space-x-6 text-sm">
-                                        <!-- Icon and Admin -->
-                                        <div class="flex items-center gap-x-2">
-                                            <svg class="" stroke-width="0" viewBox="0 0 448 512" height="1em"
-                                                width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill="red"
-                                                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
-                                                </path>
-                                            </svg>
-                                            <span>By Admin</span>
-                                        </div>
+                                    <!-- Black overlay div at center bottom -->
+                                    <div
+                                        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4 bg-[#1A1A1C] text-white px-4 py-2 rounded w-auto lg:w-100">
+                                        <div class="flex justify-between items-center space-x-6 text-sm">
+                                            <!-- Icon and Admin -->
+                                            <div class="flex items-center gap-x-2">
+                                                <svg class="" stroke-width="0" viewBox="0 0 448 512" height="1em"
+                                                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="red"
+                                                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
+                                                    </path>
+                                                </svg>
+                                                <span>By Admin</span>
+                                            </div>
 
-                                        <!-- Date -->
-                                        <div class="flex items-center gap-x-2">
-                                            <svg stroke="currentColor" fill="red" stroke-width="0" viewBox="0 0 448 512"
-                                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z">
-                                                </path>
-                                            </svg>
-                                            <span>October 19, 2024</span>
+                                            <!-- Date -->
+                                            <div class="flex items-center gap-x-2">
+                                                <svg stroke="currentColor" fill="red" stroke-width="0"
+                                                    viewBox="0 0 448 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z">
+                                                    </path>
+                                                </svg>
+                                                <span>October 19, 2024</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                            </a>
+                                </a>
                             </div>
                         </div>
 
@@ -2304,9 +2480,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </ul>
                     </div>
                 </div>
-                   <div class="flex justify-between  border-t-1 mt-4 border-gray-700">
+                <div class="flex justify-between  border-t-1 mt-4 border-gray-700">
                     <div class="mt-5">
-                       <p class="text-gray-300 ">© Yoursitename 2024 | All Rights Reserved</p>
+                        <p class="text-gray-300 ">© Yoursitename 2024 | All Rights Reserved</p>
                     </div>
 
                     <div class="mt-5">
@@ -2317,7 +2493,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                         class="text-base/[1] -1 w-30px h-30px rounded-5 grid place-items-center rounded  p-2 "
                                         href="https://www.facebook.com/">
                                         <span>
-                                           Term & condition
+                                            Term & condition
                                         </span>
                                     </a>
                                 </li>
@@ -2326,7 +2502,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                         class="text-base/[1]  w-30px h-30px rounded-5 grid place-items-center rounded  p-2 "
                                         href="https://www.facebook.com/">
                                         <span>
-                                           privacy policy
+                                            privacy policy
                                         </span>
                                     </a>
                                 </li>
@@ -2335,11 +2511,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                         class="text-base/[1] 1 w-30px h-30px rounded-5 grid rounded place-items-center  p-2 "
                                         href="https://www.facebook.com/">
                                         <span>
-                                          Contact us
+                                            Contact us
                                         </span>
                                     </a>
                                 </li>
-                           
+
 
 
                             </ul>
